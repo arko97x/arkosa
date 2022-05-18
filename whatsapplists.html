@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp Lists</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            height: {
+              128: "40rem",
+            },
+            colors: {
+              gwgreen: "#008D70",
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css"
+    />
+  </head>
+  <body>
+    <div class="h-screen w-screen overflow-auto">
+      <div
+        class="py-2 px-8 sm:px-24 sticky top-0 border-b flex flex-row justify-between items-center bg-white z-40"
+      >
+        <img
+          class="h-6 w-6 cursor-pointer"
+          onclick="location.href='index.html'"
+          src="./logo.svg"
+        />
+      </div>
+      <br />
+      <div class="px-8 sm:px-24 text-2xl font-bold text-gray-800">
+        WhatsApp Lists —
+      </div>
+      <div class="px-8 sm:px-24 text-2xl font-bold text-gray-800">
+        Improved interactivity in WhatsApp messaging
+      </div>
+      <div class="my-4 sm:my-8 mb-14 mx-8 sm:mx-24 text-justify text-sm">
+        As part of the Service & User Experience Design learning unit (by John
+        Praveen Ganta and Syed Gowhar Andrabi) of the Design & Identity studio,
+        we explored tools and methods to make the services we use, more usable,
+        easy, and desirable.
+        <br /><br />
+        One project that I worked on involved an attempt at improving
+        interactivity in WhatsApp messaging. The idea was to introduce a flavour
+        of elevated interactivity in an attempt to provide an increased sense of
+        convenience. We envisioned a feature that would allow users to exchange
+        bi-directional, editable lists within WhatsApp. Bi-directionality would
+        ensure that an item in the list that has been checked off one end shows
+        as checked-off on the other end too.
+        <br /><br />
+        Let's go through a scenario to understand why the aforementioned
+        functionality might be helpful.
+        <br /><br />
+        <div class="flex flex-col sm:flex-row items-center">
+          <div class="w-full sm:w-1/2 p-4 sm:p-8">
+            <div class="text-sm py-4 text-gray-600">
+              I narrate a frequently occuring event from my personal life here —
+              my mother requests me to buy grocery from the store, on my way
+              back home from work. She would send the list of items to me as a
+              normal WhatsApp text message. Any items that she would forget, she
+              would send them as separate messages (or as replies to her first
+              message).
+            </div>
+          </div>
+          <div class="w-full sm:w-1/2">
+            <img
+              class="bg-cover h-full"
+              src="./images/messages.jpg"
+              alt="The image is a GIF of Rowan Sebastian Atkinson engaged in a 'namaste'."
+            />
+          </div>
+        </div>
+        <br /><br />
+        The following carousel contains the floor plan of the store from which I
+        need to buy the groceries. The letters indicate the items from my mum's
+        message as they're spread across the store.
+        <br /><br />
+        <div id="default-carousel" class="relative" data-carousel="static">
+          <!-- Carousel wrapper -->
+          <div class="overflow-hidden relative h-56 rounded-lg sm:h-128 border">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="./images/wa-story-1.jpg"
+                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="./images/wa-story-2.jpg"
+                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="./images/wa-story-3.jpg"
+                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="./images/wa-story-4.jpg"
+                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="./images/wa-story-5.jpg"
+                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 6 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="./images/wa-story-6.jpg"
+                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 7 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="./images/wa-story-7.jpg"
+                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 8 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="./images/wa-story-8.jpg"
+                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                alt="..."
+              />
+            </div>
+          </div>
+          <!-- Slider controls -->
+          <button
+            type="button"
+            class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                ></path>
+              </svg>
+              <span class="hidden">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+              <span class="hidden">Next</span>
+            </span>
+          </button>
+        </div>
+        <div class="text-xs text-center font-light italic">
+          A simulation of me going around the store, picking items up.
+        </div>
+        <br /><br /><br />
+        So, what's the issue here?
+        <br /><br />
+        <img class="w-full" src="./images/wa-issues.jpg" alt="..." />
+        <br /><br />
+        Instead ...
+        <br /><br />
+        <img class="w-full" src="./images/wa-instead.jpg" alt="..." />
+        <br /><br />
+        This thought was born out of a personal need, to begin with. Upon
+        conversations with people, we gauged that others had a similar need too.
+        Armed with this rudimentary validation, we went about brainstorming
+        several flows based on User Stories that we had developed. User Stories
+        are short, specific, and goal-oriented, collaborative design tools. They
+        assume the structure of a statement with three key parts - As a
+        <b><i>{user}</i></b
+        >, I would like <b><i>{to accomplish an action}</i></b>
+        <b><i>{to achieve a certain goal}</i></b
+        >. <br /><br />
+        Given the short duration, we went through two rounds of iterations and
+        feedback from very limited (and probably biased) user testing; before
+        prototyping one flow in high-fidelity. <br /><br /><br />
+        <img class="w-full" src="./images/wa-screens.jpg" alt="..." />
+        <div class="text-xs text-center font-light italic">
+          Some screenshots of what the screens will look like.
+        </div>
+        <br /><br /><br />
+        <button
+          type="button"
+          class="w-full inline-flex justify-center border border-gwgreen px-8 py-3 bg-gwgreen text-white font-regular hover:text-gwgreen hover:bg-white focus:outline-none sm:w-auto"
+          onclick="location.href='index.html'"
+        >
+          BACK
+        </button>
+      </div>
+    </div>
+    <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
+  </body>
+</html>
