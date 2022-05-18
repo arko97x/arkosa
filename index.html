@@ -15,8 +15,8 @@
               gwgreen: "#008D70",
             },
             animation: {
-              marquee: "marquee 25s linear infinite",
-              marquee2: "marquee2 25s linear infinite",
+              marquee: "marquee 10s linear infinite",
+              marquee2: "marquee2 10s linear infinite",
             },
             keyframes: {
               marquee: {
@@ -37,23 +37,23 @@
   <body>
     <div class="h-screen w-screen overflow-auto">
       <div
-        class="py-2 px-2 sm:px-24 sticky top-0 border-b flex flex-row justify-between items-center backdrop-filter backdrop-blur-lg z-10"
+        class="py-2 px-8 sm:px-24 sticky top-0 border-b flex flex-row justify-between items-center bg-white z-10"
       >
         <img
-          class="h-8 w-8 cursor-pointer"
+          class="h-6 w-6 cursor-pointer"
           onclick="location.href='index.html'"
           src="./logo.svg"
         />
       </div>
       <div
-        class="my-2 sm:my-16 mb-14 mx-2 sm:mx-24 flex flex-col-reverse sm:flex-row"
+        class="my-8 sm:my-16 mb-14 mx-8 sm:mx-24 flex flex-col-reverse sm:flex-row"
       >
         <div class="w-full sm:w-2/3 p-4 sm:p-8 border">
           <div class="text-2xl font-bold text-gray-800">Hola!</div>
           <div class="text-sm py-4 text-gray-600">
-            I'm Arko. You are currently in my online gallery-walk space. If you
-            were unable to engage with my work in-person, fret not! All of it
-            (and more) is available here.
+            I'm Arko. You are currently viewing my online gallery-walk space. If
+            you were unable to engage with my work in-person, fret not! All of
+            it (and more) is available here.
           </div>
           <div
             class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 space-x-0 sm:space-x-4 items-center sm:text-sm"
@@ -78,34 +78,32 @@
           <img class="bg-cover h-full" src="./images/namaste.gif" />
         </div>
       </div>
-      <div class="px-2 sm:px-24 text-2xl font-light text-gray-800">
-        Themes engaged with
-      </div>
-      <div
-        class="relative flex overflow-x-hidden tracking-tight text-gwgreen font-bold italic text-2xl sm:text-4xl"
-      >
-        <div class="pt-4 pb-16 animate-marquee whitespace-nowrap">
-          <span class="mx-4"> PLAY </span>
-          <span class="mx-4"> POETRY </span>
-          <span class="mx-4"> CO-DESIGN </span>
-          <span class="mx-4"> JOY </span>
-        </div>
-
-        <div
-          class="absolute top-0 pt-4 pb-16 animate-marquee2 whitespace-nowrap"
-        >
-          <span class="mx-4"> PLAY </span>
-          <span class="mx-4"> POETRY </span>
-          <span class="mx-4"> CO-DESIGN </span>
-          <span class="mx-4"> JOY </span>
-        </div>
-      </div>
-      <div class="px-2 sm:px-24 text-2xl font-light text-gray-800">
-        Work done
-      </div>
+      <div class="px-8 sm:px-24 text-2xl font-bold text-gray-800">WORK</div>
       <br />
-      <div class="mx-2 sm:mx-24 p-4 sm:p-8 border border-dashed">
-        <div class="text-2xl font-bold text-gray-300">COMING SOON!</div>
+      <div class="mx-8 sm:mx-24 border border-dashed">
+        <!-- <div class="text-2xl font-bold text-gray-300">COMING SOON!</div> -->
+        <div class="p-4 pb-0">Themes engaged with</div>
+        <div
+          class="relative flex overflow-x-hidden tracking-tight text-gwgreen font-bold italic text-2xl sm:text-4xl"
+        >
+          <div class="pt-4 pb-4 animate-marquee whitespace-nowrap">
+            <span class="mx-4"> PLAY </span>
+            <span class="mx-4"> POETRY </span>
+            <span class="mx-4"> CO-DESIGN </span>
+            <span class="mx-4"> HUMOUR </span>
+            <span class="mx-4"> STORYTELLING </span>
+          </div>
+
+          <div
+            class="absolute top-0 pt-4 pb-4 animate-marquee2 whitespace-nowrap"
+          >
+            <span class="mx-4"> PLAY </span>
+            <span class="mx-4"> POETRY </span>
+            <span class="mx-4"> CO-DESIGN </span>
+            <span class="mx-4"> HUMOUR </span>
+            <span class="mx-4"> STORYTELLING </span>
+          </div>
+        </div>
       </div>
       <br />
       <br />
